@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>input data</h1>
+    <form action="/register" method="post" onsubmit="handleSubmit()" class="form"> 
+      <input type="text" placeholder="name" name="name" />
+      <input type="email" placeholder="email" name="email" />
+      <input type="text" placeholder="address" name="address" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div>
+      <h1>Users Data</h1>
+
+      <p id="name"></p>
+      <p id="email"></p>
+      <p id="address"></p>
+    </div>
+  </body>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+    }
+  </script>
+</html>
